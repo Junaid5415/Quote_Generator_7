@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Tienne:wght@400;700;900&display=swap');
+
+*{
+    font-family: PlayFair , serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #96461181;
+}
+
+#root{
+    width: 50em;
+    height: 30em;
+    border-radius: 10px;
+    background-color: #fff;
+    margin:15vh auto;
+    box-shadow:  0 0 20px 10px hsla(14, 42%, 54%, 0.606);
+    padding: 2em;
+    text-align: center;
+
+}
+
+#root .top{
+    font-size: xxx-large;
+    margin: 0 0 10vh 0;
+}
+
+#root .middle{
+    display: none;
+    font-size: x-large;
+    margin: 18vh auto 2vh;
+}
+
+#root .bottom{
+    display:  none;
+    font-size: larger;
+    margin: 1vh 50px 0 0;
+    float: right;
+    position: relative;
+}
+
+#root .bottom::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    top:50%;
+    left:-30px;
+    background-color: #69B9EE81;
+}
+
+
+#root button{
+    position: absolute;
+    top: 500px;
+    left: 600px;
+    font-size: large;
+    margin: 10vh 4  0px 0vh;
+    padding: 10px 25px;
+    border-radius: 22px;
+    border:1px solid grey;
+    background-color: #69B9EE81;
+    color: rgb(0, 0, 0);
+    transition: all 300ms;
+}
+
+#root button#tweet{
+    margin: 0 0 0 15vw;
+}
+
+#root button:hover{
+    scale: 1.2;
+}
+
+
+#root button:last-child{
+    opacity:  0;
+    color:black;
+    background-color: white;
+}
+
+#root button:last-child i{
+    color: #1C96E8;
+    margin:0 15px 0 0 ;
+}
+
+hr{
+    background-color:#69B9EE81;
+    margin: -70px auto;
+    width: 80px;
+    height: 3px;
+}
